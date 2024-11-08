@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
+  html {
+    font-size: 62.5%;
+    font-family: "urbanist";
+    scroll-behavior: smooth;
+  }
+  
+  p,
+  li,
+  a,
+  button {
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+  }
+  li {
+    list-style: none;
+    text-decoration: none;
+  }
+  nav a{
+    color: black;
+    font-weight: 500;
+    text-decoration:none ;
+    /* font-style: normal; */
+   
+  }
+  a:hover{
+    text-decoration: underline;
+    color: blue;
+  }
+  button {
+    cursor: pointer;
+  }
+  header {
+    height: 6rem;
+    /* box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px; */
+    background-color: rgba(238, 231, 231, 0.133);
+    width: 100%;
+    box-shadow: 0px 0px 5px ; 
+    
+  }
+  
+
+  
+  .container {
+    max-width: 132rem;
+    margin: auto;
+    /* height: 10rem !important; */
+  }
+  .grid {
+    display: grid;
+  }
+  
+  .navbar-grid {
+    grid-template-columns: 0.5fr 1fr;
+    align-items: center;
+    height: 6.5rem;
+    padding: 0 3.2rem;
+  }
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    /* text-decoration: none; */
+    /* background-color: yellow; */
+    gap: 3.2rem;
+  }
+  
+.ham-menu {
+    display: none;
+  }
+  
+  /* media queries  */
+  @media screen and (max-width: 998px) {
+    .menu-web {
+      display: none;
+    }
+    .ham-menu {
+      display: flex !important;
+      justify-content: end !important;
+      
+    }
+   
+    .ham-menu {
+      display: inline-block;
+    
+      /*justify-content: flex-end;
+      */text-align: end;
+      font-size: 24px;
+      & button {
+        width: 50px;
+        border-radius: 1.5rem;
+        border: 3px solid rgb(159, 156, 156) !important;
+        border-style:solid;
+      }
+     
+}
+  
+    .menu-mobile {
+      position: absolute;
+
+      top: 6.0rem;
+      left: 0;
+      background-color: white !important  ;
+      z-index: 1;
+      
+      width: 100%;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px;
+
+      
+}
+  
+    .menu-mobile ul {
+        text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      align-items: center;
+  
+      & li:first-child {
+        margin-top: 1.2rem;
+      }
+  
+      & li:last-child {
+        margin-bottom: 1.2rem;
+      }
+    
+    }
+  }
+
+  /* Hero Section */
+
+
+  .hero-section{
+    height: 90vh;
+    
+  }
+  .btn1{
+    height: 35px;
+     width: 120px;
+     
+  }
+  .logo{
+    height: 60px;
+    width: 60px;
+  }
+  .hero-boy .react{
+    top: 640px;
+    right: 25px;
+  }
+  .boot{
+    top: 600px;
+    left: 20px;
+  }
+  .js{
+    top: 400px;
+    right: 20px;
+  }
+  .logo1{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+  .social{
+    top: 200px;
+    right: 20px;
+    height: 200px;
+    width: 50px;
+    background-color:rgba(128, 128, 128, 0.384);
+    
+  }
+  @media   only screen and (max-width: 1000px) {
+    .social{
+      /* display:hidden; */
+      visibility: hidden;
+    }
+    
+  }
+  .about1{
+    /* background-color: rgba(128, 128, 128, 0.159); */
+    background-color: rgb(247, 242, 242);
+  }
+ .logo22{
+  height: 30px;
+ 
+  width: 30px;
+  /* padding-right: 3px; */
+ }
+ .logo25{
+  height: 28px;
+ 
+  width: 28px;
+  /* padding-right: 3px; */
+ }
+ .logo23{
+  height: 30px;
+  width: 48px !important;
+ }
+ .ss{
+  /* height: 250px;
+  width: 530px !important; */
+  padding: 50px;
+  margin-bottom: 100px;
+  box-shadow: red 0px 3px 9px -1px;
+  border: 0.5px ;
+  border-radius: 6.5px;
+  -webkit-border-radius: 6.5px;
+  -moz-border-radius: 6.5px;
+  -ms-border-radius: 6.5px;
+  -o-border-radius: 6.5px;
+}
+ .logo11{
+  padding: 2px !important;
+  padding-left: 6px !important;
+  padding-right: 9px !important;
+  box-shadow: red 0px 0px 3px 0px;
+  
+  border: 0.5px ;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.logo11 h4{
+  padding-left: 4px;
+}
+ @media   only screen and (max-width: 1000px) {
+  .ss{
+    padding: 10px;
+  }
+ 
+  
+}
+.card{
+ max-width: 370px;
+ box-shadow: red 0px 2px 3px 0px;
+}
+.project1{
+  background-color:rgb(187, 210, 234) !important;
+}
+.btn3{
+  color: #fff;
+}
+.f{
+  width: 100vw;
+}
+.scroll-up{
+  position: absolute !important;
+  
+  /* background-color: aqua!important; */
+  display: inline;
+  right:15px;
+  bottom: 1px;
+ 
+  
+
+}
+
+.g{
+  max-height: 800px;
+  max-width: 00px;
+  
+  border: 2px solid red;
+}
