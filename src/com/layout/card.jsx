@@ -1,26 +1,83 @@
-import React from 'react'
+import React from "react"
 import "../../App.css"
+import MacbookMockup from "../Animation/MacbookMockup"
+import { HiExternalLink } from "react-icons/hi"
+import { FaGithub } from "react-icons/fa"
 
-
-const Cards = ({item}) => {
+const Cards = ({ item, index }) => {
+  console.log(item.tool)
 
   return (
-  <div className="card position-relative " >
-    <img src={item.image} alt="" className='rounded-lg' />
-            <div className='p-4'>
-                <h1 className='font-semibold  mb-2'>{item.title}</h1>
-                <p>{item.desc}</p>
-                <div className='flex gap-3 mt-4'> 
-                    <button className='bg-danger btn  btn-outline-light  px-3 py-2 rounded-4'><a href={item.live} target='_blank' className='text-white text-decoration-none'>Live Preview</a></button>                   
-                    <button className='bg-black mx-4 text-white px-3 py-1 rounded-4'>
-                        <a href={item.github} target='_blank' className='flex gap-1 text-white text-decoration-none'>
-                        <img src="/image/git3.jpeg" alt="" className=' logo25 rounded-5 ' />
-                        Github Link
-                        </a>
-                        </button>
-                </div>
+    <div className="position-relative grid grid-cols-1 sm:grid-cols-2">
+      {/* Conditionally render MacbookMockup on the left or right based on index */}
+      <div
+        className={
+          index % 2 !== 0
+            ? " sm:order-2  flex justify-center sm:justify-end items-center "
+            : "order-1 sm:order-2 flex justify-center sm:justify-start  items-center"
+        }>
+        <div className="relative  w-fit z-10 sm:hover:scale-110 transition duration-500 ease-in-out group">
+          {/* Make sure MacbookMockup has a lower z-index */}
+          <a href={item.live} className="relative z-0">
+            {MacbookMockup(item.laptop, item.image)}
+          </a>
+
+          {/* "Live" text with higher z-index */}
+          <div className=" flex gap-20  justify-center  mt-4   ">
+            <div className="  sm:absolute top-[1%] rounded-lg px-3 py-2 bg-[#fc815c]  left-[20%]  sm:opacity-[.00000001] transform transition duration-500 ease-in-out group-hover:opacity-100 sm:group-hover:-translate-y-20 z-20">
+              <a
+                href={item.live}
+                className=" no-underline hover:no-underline text-white text-2xl lg:text-4xl  cursor-pointer font-bold flex content-center  items-center ">
+                Live
+                <HiExternalLink />
+              </a>
             </div>
-  </div>
+            <div className="sm:absolute top-[1%] rounded-lg px-3 py-2 bg-[#fc815c]  left-[50%] sm:opacity-[.00000001] transform transition duration-500 ease-in-out group-hover:opacity-100 sm:group-hover:-translate-y-20 z-20">
+              <a
+                href={item.github}
+                className=" no-underline hover:no-underline text-white  text-2xl lg:text-4xl cursor-pointer font-bold flex content-center  items-center ">
+                GitHub
+                <FaGithub />
+              </a>
+            </div>
+          </div>
+        </div>
+     
+        {/* Line and circle for visual indicator */}
+        <div className="hidden sm:block">
+          <div
+            className={
+              index % 2 !== 0
+                ? "w-[30%] h-1 bg-black absolute top-[50%] left-[50%] z-[1]"
+                : "w-[30%] h-1 bg-black absolute top-[50%] right-[50%] z-[1]"
+            }></div>
+          <a
+            href={item.live}
+            className="h-7 w-7 hover:scale-125 transform transition duration-200 ease-in-out   rounded-full absolute sm:top-[46%] sm:right-[48.5%] md:top-[46.9%] md:right-[48.6%] lg:top-[46%] lg:right-[49.2%] border-3 border-black bg-white z-[10]"></a>
+        </div>
+      </div>
+      <div
+        className={
+          index % 2 !== 0
+            ? " sm:order-1 mt-5 pr-10 md:pr-20"
+            : "order-2 mt-5 sm:order-2 pl-10 md:pl-28"
+        }>
+        <h1 className="text-[#fc815c] mb-2 text-4xl md:text-6xl">
+          {item.title}
+        </h1>
+        <p className=" text-xl md:text-2xl">{item.desc}</p>
+        <div className="flex flex-wrap md:gap-3 gap-2">
+          {item.tool?.map((element, index) => (
+            <span
+              className="px-3 py-1 rounded-[20px] border-1 border-slate-400 text-lg md:text-2xl"
+              key={index}>
+              {element}
+            </span>
+          ))}
+        </div>
+      </div>
+      {/* <hr /> */}
+    </div>
   )
 }
 

@@ -13,7 +13,9 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   function App() {
 
   return (
-    <Home></Home>
+    <div className="">
+      <Home></Home>
+    </div>
   )
 }
 
