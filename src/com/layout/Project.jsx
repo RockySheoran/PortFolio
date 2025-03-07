@@ -150,13 +150,13 @@ const Project = () => {
 
   return (
     <section
-      className="project1 relative bg-white position-relative "
+      className="project1 px-3 relative bg-white position-relative "
       id="project">
       <div
-        className=" px-8 md:px-20 lg:px-44 relative pb-4  project position-relative"
+        className="  md:px-20 lg:px-44  relative pb-4  project position-relative"
         id="project">
-        <div className="self-center text-center relative z-[000] mt-2.5 mb-20">
-          <span className="py-4 px-4 mx-5 pt-0 z-[999]  relative rounded-3xl  bg-black text-white mt-2  border-t-0 border-b-4 border-l-4 border-r-4 border-[#fc815c] text-4xl md:text-6xl  ">
+        <div className="self-center text-center relative z-[000]  mb-20">
+          <span className="py-4 px-4 mx-5 pt-0 z-[999]  relative rounded-3xl  bg-black text-white   border-t-0 border-b-4 border-l-4 border-r-4 border-[#fc815c] text-4xl md:text-6xl  ">
             My Project{" "}
           </span>
           {/* <span className="p-5 mx-5 pt-0 text-[#1788ae]  text-6xl  ">
@@ -168,7 +168,7 @@ const Project = () => {
             return <Cards item={items} index={index} key={index} />
           })}
         </div>
-        <div className=" absolute s z-1 hidden sm:block top-[6.2%]  w-1 h-[96%] left-[50%] bg-black"></div>
+        <div className=" absolute s z-1 hidden sm:block top-[2%] lg:top-[2.2%]  w-1 h-[100%] left-[50%] bg-black"></div>
       </div>
     </section>
   )

@@ -5,10 +5,10 @@ import { HiExternalLink } from "react-icons/hi"
 import { FaGithub } from "react-icons/fa"
 
 const Cards = ({ item, index }) => {
-  console.log(item.tool)
+  // console.log(item.tool)
 
   return (
-    <div className="position-relative grid grid-cols-1 sm:grid-cols-2">
+    <div className="position-relative border-4 px-3 sm:px-0 sm:border-none border-solid  rounded-2xl py-4 sm:shadow-none  shadow-xl shadow-red-200  border-red-200 grid grid-cols-1 sm:grid-cols-2">
       {/* Conditionally render MacbookMockup on the left or right based on index */}
       <div
         className={

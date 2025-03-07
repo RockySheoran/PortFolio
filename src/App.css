@@ -197,7 +197,7 @@
     width: 60px;
   }
   .hero-boy .react{
-    top: 580px;
+    top: 670px;
     right: 25px;
   }
   .boot{
@@ -225,7 +225,7 @@
     background-color:rgba(128, 128, 128, 0.384);
     
   }
-  @media   only screen and (max-width: 1000px) {
+  @media   only screen and (max-width: 782px) {
     .social{
       /* display:hidden; */
       visibility: hidden;
@@ -330,4 +330,39 @@
 .s{
   z-index: 1;
   
+}
+
+/*  Navbar portFolio animation */
+.wave-text span {
+    display: inline-block;
+    font-size: 4rem;
+    animation: wave 4s ease-in-out infinite;
+    -webkit-animation: wave 4s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) { animation-delay: 0s; }
+.wave-text span:nth-child(2) { animation-delay: 0.2s; }
+.wave-text span:nth-child(3) { animation-delay: 0.4s; }
+.wave-text span:nth-child(4) { animation-delay: 0.6s; }
+.wave-text span:nth-child(5) { animation-delay: 0.8s; }
+.wave-text span:nth-child(6) { animation-delay: 1s; }
+.wave-text span:nth-child(7) { animation-delay: 1.2s; }
+.wave-text span:nth-child(8) { animation-delay: 1.4s; }
+.wave-text span:nth-child(9) { animation-delay: 1.6s; }
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
+    50% {
+        transform: translateY(-14px);
+        -webkit-transform: translateY(-14px);
+        -moz-transform: translateY(-14px);
+        -ms-transform: translateY(-14px);
+        -o-transform: translateY(-14px);
+}
 }

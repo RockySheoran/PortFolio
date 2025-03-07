@@ -19,7 +19,7 @@ export const Home = () =>{
         <PaticleBackground />
 
         <Navbar />
-        <div className="h-[126vh] sm:h-[126vh]   md:h-[156vh] lg:h-[88vh]">
+        <div className="">
           <Hero></Hero>
         </div>
 

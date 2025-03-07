@@ -4,13 +4,13 @@ import "../../App.css"
 const About = () => {
   return (
     <section
-      className="p-0 pb-4 about1 position-relative p-sm-5 p-lg-1 "
+      className="p-0 pb-4 about1  position-relative p-sm-5 p-lg-1 "
       id="about">
       <div className="container ">
         <div className="pt-4 name d-flex flex-column align-items-center">
           <h3 className="text-danger">ABOUT ME</h3>
           <h2 className="fw-bold">Hi, I'm Rocky Sheoran</h2>
-          <p className="md:px-5 px-3 pt-2">
+          <p className="md:px-5 px-4 pt-2">
             A Full stack developer passionate about building intuitive,
             scalable, and user-friendly web applications.
           </p>
