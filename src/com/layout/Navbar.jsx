@@ -42,10 +42,10 @@ console.log(activeItem)
                 ? "menu-mobile w-[60%] h-[100vh] z-[9999] rounded-md text-white bg-slate-700 ml-auto right-0 transition-transform duration-300 ease-in-out"
                 : "menu-web"
             }`}>
-            <ul className="menu mt-1">
+            <ul className="menu md:gap-7 lg:gap-14 xl:gap-20 mt-1">
               {["About", "Skill", "Project","Certification", "Contact"].map((item) => (
                 <li
-                  className={activeItem === item ? "active text-red-500" : ""}
+                  className={activeItem === item ? "active text-red-500 w-fit" : "w-fit"}
                   key={item}
                   onClick={() => {
                     setActiveItem(item) // Set active item

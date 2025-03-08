@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 const certifications = [
   {
-    title: "Certified Web Developer",
+    title: "Certified Web Designing",
     issuer: "Solitaire Infosys",
     date: "June 2024",
     description:

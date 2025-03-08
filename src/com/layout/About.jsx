@@ -34,7 +34,9 @@ const About = () => {
               className="p-3 img-fluid h-25 z-index-1"
             />
           </div>
-          <div id='Skill' className="py-5 md:mx-2 mx-0.5 mt-5 col ss align-content-center mx-lg-3 align-items-center d-flex flex-column ">
+          <div
+            id="Skill"
+            className="py-5 md:mx-2 mx-0.5 mt-5 col ss align-content-center mx-lg-3 align-items-center d-flex flex-column ">
             <div className=" align-items-center d-flex flex-column">
               <h3>Skills & Expertise</h3>
             </div>
@@ -105,7 +107,7 @@ const About = () => {
               </div>
               <div className="logo11 d-flex justify-content-center align-items-center ">
                 <img
-                  src="/image/nodejs.png"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvSHnsc86rdr2xn_9m3i4rMzYVhQhIQOjl2Q&"
                   alt="Node js"
                   className="logo22 pe-2"
                 />
@@ -114,7 +116,7 @@ const About = () => {
 
               <div className="logo11 d-flex justify-content-center align-items-center ">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvSHnsc86rdr2xn_9m3i4rMzYVhQhIQOjl2Q&s"
+                  src="/image/mongo.jpeg"
                   alt="MongoDB"
                   className="logo22 pe-2"
                 />

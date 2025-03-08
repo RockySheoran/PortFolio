@@ -96,7 +96,7 @@
       */text-align: end;
       font-size: 24px;
       & button {
-        width: 50px;
+        /* width: 50px; */
         border-radius: 1.5rem;
         border: 3px solid rgb(159, 156, 156) !important;
         border-style:solid;
@@ -149,7 +149,7 @@
 }
 
 .menu li {
-  width: 125px;
+  /* width: 125px; */
   height: 50px;
   transition: background-position-x 0.9s linear;
   text-align: center;
