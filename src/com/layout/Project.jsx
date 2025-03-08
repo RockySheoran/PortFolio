@@ -2,6 +2,7 @@ import React from "react"
 // import { Card } from 'react-bootstrap';
 
 import Cards from "./card"
+import Certifications from "./Certification"
 
 const Project = () => {
   const projectJson = [
@@ -165,6 +166,7 @@ const Project = () => {
         </div>
         <div className=" absolute s z-1 hidden sm:block top-[2%] lg:top-[2.2%]  w-1 h-[100%] left-[50%] bg-black"></div>
       </div>
+      
     </section>
   )
 }

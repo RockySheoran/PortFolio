@@ -75,7 +75,7 @@ const Cards = ({ item, index }) => {
           <div
             className={
               index % 2 !== 0
-                ? "w-[30%] dummy-card h-1 bg-black absolute top-[50%] left-[50%] z-[1]"
+                ? "w-[30%] dummy-card  h-1 bg-black absolute top-[50%] left-[50%] z-[1]"
                 : "w-[30%] dummy-card  h-1 bg-black absolute top-[50%] right-[50%] z-[1]"
             }></div>
 

@@ -9,6 +9,7 @@ import Contact from "./layout/Contact1"
 import { Footer } from "./layout/Footer"
 import Alert from "./layout/Alert"
 import MacbookMockup from "./Animation/MacbookMockup"
+import Certifications from "./layout/Certification"
 // import { Alert } from "bootstrap"
 
 // import Contact from "./layout/Contact"
@@ -24,8 +25,11 @@ export const Home = () =>{
         </div>
 
         <About />
-        
+
         <Project />
+        <div className="bg-white">
+          <Certifications />
+        </div>
 
         <Contact />
         <Footer />
