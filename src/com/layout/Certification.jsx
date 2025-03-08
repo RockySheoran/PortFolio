@@ -8,24 +8,22 @@ const certifications = [
     date: "June 2024",
     description:
       "A comprehensive course covering HTML, CSS, JavaScript, and React.",
-    imageUrl:
-      "/image/web.jpg",
+    imageUrl: "/image/web.jpg",
   },
   {
     title: "DSA Certification ",
     issuer: "Great Learning",
     date: "july 2024",
     description: "An in-depth course on DSA and best practices.",
-    imageUrl:
-      "/image/dsa.jpg",
+    imageUrl: "/image/dsa.jpg",
   },
   {
     title: "Web Development Certification",
     issuer: "Udemy",
     date: "Dec 2024",
-    description: "Learn how to build Full Stack Development",
-    imageUrl:
-      "/image/full.jpg",
+    description:
+      "A comprehensive course focused on full-stack web development, covering frontend and backend technologies.",
+    imageUrl: "/image/full.jpg",
   },
 ]
 
