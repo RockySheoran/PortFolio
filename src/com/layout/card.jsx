@@ -5,34 +5,30 @@ import { HiExternalLink } from "react-icons/hi"
 import { FaGithub } from "react-icons/fa"
 
 const Cards = ({ item, index }) => {
-  // console.log(item.tool)
-const [visibleCards, setVisibleCards] = useState([])
+  const [visibleCards, setVisibleCards] = useState([])
 
-useEffect(() => {
-  const handleScroll = () => {
-    const cardElements = document.querySelectorAll(".card1")
-    cardElements.forEach((card, index) => {
-      const rect = card.getBoundingClientRect()
-      if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-        setVisibleCards((prev) => [...new Set([...prev, index])])
-      } else {
-        setVisibleCards((prev) => prev.filter((item) => item !== index))
-      }
-    })
-  }
+  useEffect(() => {
+    const handleScroll = () => {
+      const cardElements = document.querySelectorAll(".card1")
+      cardElements.forEach((card, index) => {
+        const rect = card.getBoundingClientRect()
+        if (rect.top >= 0 && rect.bottom <= window.innerHeight * 1.3) {
+          // 90vh
+          setVisibleCards((prev) => [...new Set([...prev, index])])
+        } else {
+          setVisibleCards((prev) => prev.filter((item) => item !== index))
+        }
+      })
+    }
 
-  window.addEventListener("scroll", handleScroll)
-  handleScroll() // Check visibility on load
+    window.addEventListener("scroll", handleScroll)
+    handleScroll() // Check visibility on load
 
-  return () => window.removeEventListener("scroll", handleScroll)
-}, [])
-
-
-
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   return (
     <div className="position-relative border-4 px-3 sm:px-0 sm:border-none border-solid  rounded-2xl py-4 sm:shadow-none  shadow-xl shadow-red-200  border-red-200 grid grid-cols-1 sm:grid-cols-2">
-      {/* Conditionally render MacbookMockup on the left or right based on index */}
       <div
         className={
           index % 2 !== 0
@@ -49,12 +45,10 @@ useEffect(() => {
               ? "-translate-x-full opacity-0"
               : "translate-x-full opacity-0"
           }`}>
-          {/* Make sure MacbookMockup has a lower z-index */}
           <a target="_blank" href={item.live} className="relative z-0">
             {MacbookMockup(item.laptop, item.image)}
           </a>
 
-          {/* "Live" text with higher z-index */}
           <div className=" flex gap-20  justify-center  mt-4   ">
             <div className="  sm:absolute top-[1%] rounded-lg px-3 py-2 bg-[#fc815c]  left-[20%]  sm:opacity-[.00000001] transform transition duration-500 ease-in-out group-hover:opacity-100 sm:group-hover:-translate-y-20 z-20">
               <a
@@ -77,7 +71,6 @@ useEffect(() => {
           </div>
         </div>
 
-        {/* Line and circle for visual indicator */}
         <div className="hidden sm:block">
           <div
             className={
@@ -112,7 +105,6 @@ useEffect(() => {
           ))}
         </div>
       </div>
-      {/* <hr /> */}
     </div>
   )
 }
