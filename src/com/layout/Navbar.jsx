@@ -29,17 +29,10 @@ console.log(activeItem)
     <header className="sticky top-0 z-[999999] bg-background/95 backdrop-blur lg:px-0">
       <div className="container position-relative">
         <div className="grid navbar-grid mx-3">
-          <a href="#" className="log wave-text">
-            <div className="wave-text w-[170px]">
-              <span>P</span>
-              <span>o</span>
-              <span>r</span>
-              <span>t</span>
-              <span>f</span>
-              <span>o</span>
-              <span>l</span>
-              <span>i</span>
-              <span>o</span>
+          <a href="#" className="log no-underline text-black wave-text1">
+            <div className="wave-text1 w-[170px]">
+              <span className="text-5xl font-bold">PortFolio</span>
+
             </div>
           </a>
           <nav

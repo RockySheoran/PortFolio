@@ -13,7 +13,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   function App() {
 
   return (
-    <div className="">
+    <div className="w-[100vw] overflow-hidden ">
       <Home></Home>
     </div>
   )

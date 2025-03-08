@@ -94,7 +94,7 @@ const Project = () => {
     //     "#Context Api",
     //   ],
     // },
-   
+
     {
       title: "Portfolio",
       desc: "Webelite Builders did an amazing job on our website. Their professionalism and dedication to our project were outstanding.",
@@ -108,12 +108,7 @@ const Project = () => {
         "#JavaScript",
         "#React",
         "#Tailwind CSS",
-        "#Node.js",
-        "#Express.js",
-        "#MongoDB",
-        "#Axios",
-        "#REST API",
-        "#Redux",
+        "#Animation",
       ],
     },
     {
@@ -124,7 +119,7 @@ const Project = () => {
 
       live: "https://world-tour1.netlify.app/",
       github: "https://github.com/RockySheoran/world-tour",
-      tool: ["#HTML", "#CSS", "#JavaScript", "#React", "#Tailwind CSS"],
+      tool: ["#HTML", "#CSS", "#JavaScript", "#React","#Api", "#Tailwind CSS"],
     },
     {
       title: "E-commerce website ",
@@ -134,7 +129,7 @@ const Project = () => {
 
       live: "https://e-commerce-project-rs.netlify.app/",
       github: "https://github.com/RockySheoran/E-comerce-project",
-      tool: ["#HTML", "#CSS", "#JavaScript", "#React", "#Tailwind CSS", ,],
+      tool: ["#HTML", "#CSS", "#JavaScript", "#Tailwind CSS", ,],
     },
     {
       title: "Pokemon",
@@ -144,7 +139,7 @@ const Project = () => {
 
       live: "https://pokemonking.netlify.app/",
       github: "https://github.com/RockySheoran/pokemonSite",
-      tool: ["#HTML", "#CSS", "#JavaScript", "#React", "#Tailwind CSS"],
+      tool: ["#HTML", "#CSS", "#JavaScript", "#React", "#Api","#Tailwind CSS"],
     },
   ]
 

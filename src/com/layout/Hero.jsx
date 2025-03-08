@@ -3,10 +3,11 @@
 import { useState } from "react"
 import "../../App.css"
 import Alert from "./Alert"
-import resume from "./Rocky-resume11.pdf"
+import resume from "./Rocky-resume.pdf"
 import TextAni from "../Animation/TextAni"
 // import { GrResume } from "react-icons/gr"
 import { motion } from "framer-motion"
+import { IoMdDownload } from "react-icons/io"
 
 
 
@@ -35,10 +36,14 @@ import { motion } from "framer-motion"
             <button className="w-56 h-16 bg-black border-3 rounded-4">
               <a
                 href={resume}
-                download="resume"
-                className="text-white text-decoration-none">
+                target="_blank"
+                download="Rocky-Resume"
+                className="text-white flex gap-2 px-2 text-decoration-none">
                 {" "}
-                Download cv..
+                <span className="mt-2">
+                  <IoMdDownload />
+                </span>{" "}
+                <span>Resume..</span>
               </a>
             </button>
           </div>
