@@ -35,7 +35,7 @@ const Certifications = () => {
       className="py-16 relative z-[9999] bg-white bg-gradient-to-br from-blue-50 to-blue-100"
       id="Certification">
       <div className="container z-[9999] mx-auto px-6">
-        <h2 className="text-4xl font-extrabold text-center text-blue-600 mb-12">
+        <h2 className="text-4xl md:text-6xl font-extrabold text-center text-blue-600 mb-12">
           Certifications
         </h2>
         <div className="grid py-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
