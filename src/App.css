@@ -71,7 +71,9 @@
     /* background-color: yellow; */
     /* gap: 3.2rem; */
   }
-  
+  .active{
+    color: #d94f5c;
+  }
 .ham-menu {
     display: none;
   }
@@ -84,6 +86,7 @@
     .ham-menu {
       display: flex !important;
       justify-content: end !important;
+       /* color: #777; */
       
     }
    
@@ -154,7 +157,7 @@
 
   a {
     font-size: 22px;
-    color: #777;
+    /* color: #777; */
     text-decoration: none;
     transition: all 0.45s;
   }

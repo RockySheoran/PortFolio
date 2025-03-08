@@ -29,7 +29,7 @@ const Contact1 = () => {
   return (
     <section
       className=" position-relative relative z-50 sm:px-5 py-10 bg-gray-800"
-      id="contact">
+      id="Contact">
       <div className="container">
         <div className="mb-8 ml-16 md:w-1/2 md:mb-0  px-3 pl-20">
           <h2 className="mb-3 font-bold text-danger">Get in Touch</h2>

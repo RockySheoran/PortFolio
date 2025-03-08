@@ -151,7 +151,7 @@ const Project = () => {
   return (
     <section
       className="project1 px-3 relative bg-white position-relative "
-      id="project">
+      id="Project">
       <div
         className="  md:px-20 lg:px-44  relative pb-4  project position-relative"
         id="project">

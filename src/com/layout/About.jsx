@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       className="p-0 pb-4 about1  position-relative p-sm-5 p-lg-1 "
-      id="about">
+      id="About">
       <div className="container ">
         <div className="pt-4 name d-flex flex-column align-items-center">
           <h3 className="text-danger">ABOUT ME</h3>
@@ -34,12 +34,12 @@ const About = () => {
               className="p-3 img-fluid h-25 z-index-1"
             />
           </div>
-          <div className="py-5 md:mx-2 mx-0.5 mt-5 col ss align-content-center mx-lg-3 align-items-center d-flex flex-column ">
+          <div id='Skill' className="py-5 md:mx-2 mx-0.5 mt-5 col ss align-content-center mx-lg-3 align-items-center d-flex flex-column ">
             <div className=" align-items-center d-flex flex-column">
               <h3>Skills & Expertise</h3>
             </div>
 
-            <div className="flex-wrap gap-4  px-1 pt-3 mt-3 skill d-flex align-items-center px-lg-5 ">
+            <div className="flex-wrap gap-4  px-1 pt-3 mt-3 skill d-flex align-items-center md:px-5 ">
               <div className="logo11 d-flex justify-content-center align-items-center ">
                 <img src="/image/java.png" alt="DSA" className="logo22 pe-2" />
                 <h4>Java+Dsa</h4>
