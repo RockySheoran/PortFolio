@@ -49,14 +49,15 @@ import { IoMdDownload } from "react-icons/io"
           </div>
           <div className="pt-4   hero-boy justify-content-start justify-content-lg-center ">
             <motion.div
-              className="pt-hero-boy  md:pl-20 justify-content-start justify-content-lg-center "
+              className="pt-hero-bo  md:pl-20 bg-transparent justify-content-start justify-content-lg-center "
               initial={{ x: "100%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, ease: "easeOut" }}>
               <img
-                src="/image/boy-2.jpg"
+                // src="/image/boy-2.jpg"
+                src="/image/boy-2-removebg-preview (1).png"
                 alt="hero-boy"
-                className=" h-[500px] w-[500px] "
+                className=" h-[500px]  bg-transparent    w-[500px] "
               />
             </motion.div>
             {/* <img

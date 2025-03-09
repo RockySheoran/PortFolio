@@ -26,13 +26,12 @@ console.log(activeItem)
   }, [])
 
   return (
-    <header className="fixed top-0 z-[999999] bg-background/95 backdrop-blur lg:px-0">
+    <header className="fixed top-0 z-[999999] bg-background/95 backdrop-blur bg-transparent supports-[backdrop-filter]:bg-background/20  lg:px-0">
       <div className="container position-relative">
         <div className="grid navbar-grid mx-3">
           <a href="#" className="log no-underline text-black wave-text1">
             <div className="wave-text1 w-[170px]">
               <span className="text-5xl font-bold">PortFolio</span>
-
             </div>
           </a>
           <nav
@@ -43,23 +42,31 @@ console.log(activeItem)
                 : "menu-web"
             }`}>
             <ul className="menu md:gap-7 lg:gap-14 xl:gap-20 mt-1">
-              {["About", "Skill", "Project","Certification", "Contact"].map((item) => (
-                <li
-                  className={activeItem === item ? "active text-red-500 w-fit" : "w-fit"}
-                  key={item}
-                  onClick={() => {
-                    setActiveItem(item) // Set active item
-                    setShowMenu(false) // Close menu on click
-                  }}>
-                  <a
-                    href={`#${item}`}
+              {["About", "Skill", "Project", "Certification", "Contact"].map(
+                (item) => (
+                  <li
                     className={
-                      activeItem === item ? "active text-red-500" : "text-black"
-                    }>
-                    {item.charAt(0).toUpperCase() + item.slice(1)}
-                  </a>
-                </li>
-              ))}
+                      activeItem === item
+                        ? "active text-red-500 w-fit"
+                        : "w-fit"
+                    }
+                    key={item}
+                    onClick={() => {
+                      setActiveItem(item) // Set active item
+                      setShowMenu(false) // Close menu on click
+                    }}>
+                    <a
+                      href={`#${item}`}
+                      className={
+                        activeItem === item
+                          ? "active text-red-500"
+                          : "text-black"
+                      }>
+                      {item.charAt(0).toUpperCase() + item.slice(1)}
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
           </nav>
           <div className="ham-menu ">
