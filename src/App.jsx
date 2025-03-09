@@ -1,7 +1,7 @@
 
 import { BrowserRouter, createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
-
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import { AppLayout } from './com/layout/AppLayout';
 import { Home } from './com/Home';
 import { pdfjs } from 'react-pdf';
@@ -26,19 +26,19 @@ console.log(value)
 
   return (
     <div className="w-[100vw] overflow-hidden ">
-        {value != true ? (
-          <div className="h-[100vh]  w-[100vw] flex justify-center items-center">
+      {value != true ? (
+        <div className="h-[100vh]  w-[100vw] flex justify-center items-center">
           <Atom
             color="#32cd32"
             size="large"
             text="Please Wait..."
             textColor="#16e44d"
           />
-            </div>
-        ) : (
-          <Home></Home>
-        )}
-    
+        </div>
+      ) : (
+        <Home></Home>
+      )}
+      <SpeedInsights />
     </div>
   )
 }
