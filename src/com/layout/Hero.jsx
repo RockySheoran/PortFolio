@@ -16,7 +16,7 @@ import { IoMdDownload } from "react-icons/io"
 
 
     return (
-      <section className="  relative  pb-lg-1">
+      <section className="  relative  mt-[40px]">
         <div className="container p-5  grid grid-cols-1 md:grid-cols-2">
           {/* <Alert/> */}
           <div className="pt-3 about col pt-lg-0 justify-content-lg-center align-content-center d-flex flex-column ">

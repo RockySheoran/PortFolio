@@ -12,7 +12,7 @@ const Cards = ({ item, index }) => {
       const cardElements = document.querySelectorAll(".card1")
       cardElements.forEach((card, index) => {
         const rect = card.getBoundingClientRect()
-        if (rect.top >= 0 && rect.bottom <= window.innerHeight * 1.3) {
+        if (rect.top >= 0 && rect.bottom <= window.innerHeight * 1.4) {
           // 90vh
           setVisibleCards((prev) => [...new Set([...prev, index])])
         } else {
