@@ -37,7 +37,7 @@ import { IoMdDownload } from "react-icons/io"
               <a
                 href={resume}
                 target="_blank"
-                download="Rocky-Resume"
+                download="Rocky-Resume.pdf"
                 className="text-white flex gap-2 px-2 text-decoration-none">
                 {" "}
                 <span className="mt-2">
